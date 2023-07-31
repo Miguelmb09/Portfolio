@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
- 
+  goToLink(url: string){
+    window.open(url, "_blank");
+}
 
 }

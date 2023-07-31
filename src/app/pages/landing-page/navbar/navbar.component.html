@@ -2,11 +2,10 @@
  <div class="container-xxl position-relative p-0" id="home">
     <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
         <a href="" class="navbar-brand p-0">
-            <h1 class="m-0">Portfolio</h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
+            <h2 class="m-0">Portfolio</h2>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="fa fa-bars"></span>
+            <i class="pi pi-bars" style="font-size: 18px;"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
@@ -15,8 +14,8 @@
                 <!-- <a href="#feature" class="nav-item nav-link">{{ 'NAVBAR.clients' | translate }}</a> -->
                 <a href="#partners" class="nav-item nav-link">{{ 'NAVBAR.partners' | translate }}</a>
                 <a href="#contact" class="nav-item nav-link">{{ 'NAVBAR.contact' | translate }}</a>
+             
             </div>
-            <!-- <a  class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">{{ 'NAVBAR.language' | translate }}</a> -->
             <app-language></app-language>
         </div>
     </nav>
@@ -28,7 +27,21 @@
                     <h1 class="text-white mb-4 animated slideInDown">Miguel Maldonado</h1>
                     <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
                     <a href="#hero" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">{{ 'NAVBAR.read' | translate }}</a>
-                    <a href="#contact" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">{{ 'NAVBAR.contactMe' | translate }}</a>
+                    <a (click)="op.toggle($event)" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">{{ 'NAVBAR.contactMe' | translate }}</a>
+                    <p-overlayPanel #op>
+                        <div class="p-2">
+                            <button (click)="goToLink('https://wa.me/+584125961478')" class="social-btn">
+                                WhatsApp
+                                <i class="pi pi-whatsapp" style="font-size: 18px;"></i>
+                            </button>
+                        </div>
+                        <div class="p-2">
+                            <button (click)="goToLink('https://t.me/miguelmb09')" class="social-btn">
+                                Telegram
+                                <i class="pi pi-telegram" style="font-size: 18px;"></i>
+                            </button>
+                        </div>
+                    </p-overlayPanel>
                 </div>
                 <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
                     <div class="owl-carousel screenshot-carousel">

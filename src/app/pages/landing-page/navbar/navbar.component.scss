@@ -1,3 +1,20 @@
+.social-btn{
+    width: 130px;
+    padding: 10px 15px;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+}
+.social-btn:hover{
+    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    color: #fff;
+}
+
+
+
 /********** Template CSS **********/
 :root {
     --primary: #4294E3;
@@ -179,7 +196,7 @@ h6,
     top: 0;
 }
 
-.navbar-light .navbar-brand h1 {
+.navbar-light .navbar-brand h2 {
     color: #FFFFFF;
 }
 
@@ -219,10 +236,12 @@ h6,
         color: var(--primary) !important;
     }
 
-    .navbar-light .navbar-brand h1 {
-        background: linear-gradient(to bottom right, var(--primary), var(--secondary));
-      
-        -webkit-text-fill-color: transparent;
+    .navbar-light .navbar-brand h2 {
+      background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+      border-radius: 10px;
+      text-align: center;
+      width: 120px;
+        // -webkit-text-fill-color: transparent;
     }
 
     .navbar-light .navbar-brand img {
@@ -248,7 +267,7 @@ h6,
         border-top-color: var(--primary);
     }
 
-    .sticky-top.navbar-light .navbar-brand h1 {
+    .sticky-top.navbar-light .navbar-brand h2 {
         background: linear-gradient(to bottom right, var(--primary), var(--secondary));
        
         -webkit-text-fill-color: transparent;
