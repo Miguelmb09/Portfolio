@@ -1,0 +1,17 @@
+.scrollTop{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 10px 15px;
+    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    color: #fff;
+    border-radius: 5px;
+    border-radius: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    scroll-behavior: smooth;
+}
+.scrollTop:hover{
+    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    color: #fff;
+}

@@ -1,0 +1,36 @@
+{
+    "NAVBAR":{
+        "home": "Inicio",
+        "projects": "Proyectos",
+        "clients": "Clientes",
+        "partners": "Socios",
+        "contact": "Contacto",
+        "language": "Idioma",
+        "english": "Inglés",
+        "spanish": "Español",
+        "read": "Leer más",
+        "contactMe": "Contáctame" 
+    },
+    "HERO": {
+        "welcome": "Te doy la bienvenida a mi portafolio, mi nombre es Miguel Maldonado, me especializo en el desarrollo de aplicaciones híbridas escalables utilizando Ionic Framework y Angular, siempre trabajando bajo las mejores prácticas y utilizando metodologías ágiles.",
+        "specialize": "Me especializo en Crear, modificar y dar mantenimiento a aplicaciones funcionales en multiples plataformas, android, ios nativo y web utilizando las tecnologías ionic y angular.",
+        "skills": "Habilidades",
+        "english": "INGLÉS"
+    },
+    "PROJECTS":{
+        "projects": "Proyectos",
+        "details": "Detalles"
+
+    },
+    "PARTNERS":{
+        "title": "Socios"
+
+    },
+    "CONTACT":{
+        "address": "Dirección",
+        "quickLink": "Enlace Rápido",
+        "popularLink": "Enlace Popular",
+        "email": "Email"
+
+    }
+}

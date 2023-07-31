@@ -1,0 +1,44 @@
+ <!-- Navbar & Hero Start -->
+ <div class="container-xxl position-relative p-0" id="home">
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+            <h1 class="m-0">Portfolio</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto py-0">
+                <a href="#home" class="nav-item nav-link active">{{ 'NAVBAR.home' | translate }}</a>
+                <a href="#projects" class="nav-item nav-link">{{ 'NAVBAR.projects' | translate }}</a>
+                <!-- <a href="#feature" class="nav-item nav-link">{{ 'NAVBAR.clients' | translate }}</a> -->
+                <a href="#partners" class="nav-item nav-link">{{ 'NAVBAR.partners' | translate }}</a>
+                <a href="#contact" class="nav-item nav-link">{{ 'NAVBAR.contact' | translate }}</a>
+            </div>
+            <!-- <a  class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">{{ 'NAVBAR.language' | translate }}</a> -->
+            <app-language></app-language>
+        </div>
+    </nav>
+
+    <div class="container-xxl bg-primary hero-header">
+        <div class="container px-lg-5">
+            <div class="row g-5">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <h1 class="text-white mb-4 animated slideInDown">Miguel Maldonado</h1>
+                    <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
+                    <a href="#hero" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">{{ 'NAVBAR.read' | translate }}</a>
+                    <a href="#contact" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">{{ 'NAVBAR.contactMe' | translate }}</a>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="owl-carousel screenshot-carousel">
+                        <img class="img-fluid" style="height: 470px" src="/assets/img/bg1.jpg" alt="">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar & Hero End -->

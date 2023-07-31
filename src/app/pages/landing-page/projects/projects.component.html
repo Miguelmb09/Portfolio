@@ -1,0 +1,28 @@
+
+<!--========== Projects =============-->
+<div id="projects" (window:resize)="resizeSlider($event)">
+  
+  <h2 style="text-align: center; padding-top: 50px; margin-top: 50px;">{{ 'PROJECTS.projects' | translate }}</h2>
+    
+  <swiper  class="p-5" [config]="config">
+    
+    <ng-template *ngFor="let p of projects.value" swiperSlide>
+      
+      <div class="card" style="width: 18rem;">
+        <img [src]="p.img" class="card-img-top" alt="...">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title">{{p.title}}</h5>
+          <p class="card-text">{{p.description}}</p>
+          <div style="text-align: center;">
+            <button routerLink="/project-detail/{{p.id}}" class="btn btn-primary-gradient py-sm-2 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">{{ 'PROJECTS.details' | translate }}</button>
+          </div>
+        </div>
+      </div>
+  
+
+    </ng-template>
+
+  </swiper>
+</div>
+
+

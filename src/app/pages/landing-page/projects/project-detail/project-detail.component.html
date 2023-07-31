@@ -1,0 +1,62 @@
+<!--========== Project detail =============-->
+<div id="projects" class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="text-align: center;">
+      <h3 class="pb-3">{{project.value.title}}</h3>
+      <span class="p-2" style="text-align: center;" *ngFor="let p of project.value.icons">
+        <img width="50px" height="50px" [src]="p" alt="">
+      </span>
+
+      <div class="p-3">
+        <div class="container mb-4" *ngFor="let p of project.value.details">
+          <div class="row">
+            <div class="col-1 d-flex justify-content-center align-items-center">
+              <i class="pi pi-check-circle" style="font-size: 20px;"></i>
+            </div>
+            <div class="col-11 text-start">
+              {{p}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-4" style="text-align: center;">
+        <a [href]="project.value.webUrl" target="_blank" rel="noopener noreferrer">
+        <button style="width: 150px;" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-8 rounded-pill me-3 animated slideInLeft">
+          Demo web
+        </button>
+      </a>
+        <a [href]="project.value.apk" target="_blank" rel="noopener noreferrer">
+        <button style="width: 150px;" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-8 rounded-pill me-3 animated slideInLeft">
+          Apk
+        </button>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+      <img width="100%" class="object-fit-fill" [src]="project.value.img" alt>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div (window:resize)="resizeSlider($event)">
+
+  <swiper class="p-4" [config]="config">
+
+    <ng-template *ngFor="let p of project.value.captures" swiperSlide>
+
+      <div class="card" style="width: 18rem;">
+        <img [src]="p" class="card-img-top" alt="...">
+      </div>
+
+
+    </ng-template>
+
+  </swiper>
+</div>
