@@ -1,11 +1,11 @@
-import { Component, inject } from '@angular/core';
+import { Component, ViewChild, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { LanguageService } from 'src/app/services/language.service';
-import { Projects } from 'src/assets/data/db';
-import { SwiperOptions } from 'swiper/types/swiper-options';
+import SwiperCore, {SwiperOptions, Pagination } from 'swiper';
 
-
+// install Swiper modules
+SwiperCore.use([Pagination]);
 @Component({
   selector: 'app-project-detail',
   templateUrl: './project-detail.component.html',
@@ -27,11 +27,13 @@ export class ProjectDetailComponent {
   }
 
   ngOnInit() {
+    this.scrollToBottom();
     this.resizeSlider();
     this.projects = this.langSvc.projects;
     this.project = this.langSvc.projectDetail;
     this.project.next(this.projects.value.filter(project => project.id === this.projectId)[0])
   }
+
 
   
 
@@ -48,9 +50,15 @@ export class ProjectDetailComponent {
 
     this.config = {
       slidesPerView: slidesPerViewValue,
-      spaceBetween: 10
+      spaceBetween: 10,
+      pagination: {clickable:true}
     };
   }
+
+    // ====== Scroll to bottom ======
+    scrollToBottom() {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
 
 
 }

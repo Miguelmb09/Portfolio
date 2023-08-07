@@ -1,5 +1,5 @@
 <!--========== Project detail =============-->
-<div id="projects" class="container">
+<div class="container" style="padding-top: 75px;">
   <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-12" style="text-align: center;">
       <h3 class="pb-3">{{project.value.title}}</h3>
@@ -34,15 +34,15 @@
       </div>
     </div>
 
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-      <img width="100%" class="object-fit-fill" [src]="project.value.img" alt>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-flex-center">
+      <img width="100%" class="object-fit-fill" style="border-radius: 15px;" [src]="project.value.img" alt>
     </div>
   </div>
 </div>
 
 
 
-
+<h2 style="text-align: center; padding-top: 60px; margin-top: 50px;">{{ 'PROJECTS.screenshots' | translate }}</h2>
 
 
 <div (window:resize)="resizeSlider($event)">
@@ -54,7 +54,7 @@
       <div class="card" style="width: 18rem;">
         <img [src]="p" class="card-img-top" alt="...">
       </div>
-
+<br>
 
     </ng-template>
 

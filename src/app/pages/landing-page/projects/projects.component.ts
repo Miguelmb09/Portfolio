@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { LanguageService } from 'src/app/services/language.service';
-import { Projects, Proyectos } from 'src/assets/data/db';
-import { SwiperOptions } from 'swiper/types/swiper-options';
+import SwiperCore, {SwiperOptions, Pagination } from 'swiper';
+
+// install Swiper modules
+SwiperCore.use([Pagination]);
 
 @Component({
   selector: 'app-projects',
@@ -38,7 +40,8 @@ config: SwiperOptions
 
     this.config = {
       slidesPerView: slidesPerViewValue,
-      spaceBetween: 10
+      spaceBetween: 10,
+      pagination: {clickable:true}
     };
   }
 

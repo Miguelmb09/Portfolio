@@ -1,3 +1,6 @@
+
+
+
 .social-btn{
     width: 130px;
     padding: 10px 15px;
@@ -188,7 +191,7 @@ h6,
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: white;
 }
 
 .navbar-light .navbar-nav .nav-link:hover::before,
@@ -212,7 +215,7 @@ h6,
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: #FFFFFF;
+        background: linear-gradient(to top right, var(--primary), var(--secondary));
     }
 
     .navbar-light .navbar-collapse {
@@ -224,7 +227,7 @@ h6,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--dark) !important;
+        color: white;
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -237,7 +240,7 @@ h6,
     }
 
     .navbar-light .navbar-brand h2 {
-      background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+        color: #FFFFFF;
       border-radius: 10px;
       text-align: center;
       width: 120px;
@@ -260,18 +263,14 @@ h6,
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: #FFFFFF;
+        background: linear-gradient(to top right, var(--primary), var(--secondary));
     }
 
     .sticky-top.navbar-light .navbar-nav .nav-link::before {
-        border-top-color: var(--primary);
+        border-top-color: white;
     }
 
-    .sticky-top.navbar-light .navbar-brand h2 {
-        background: linear-gradient(to bottom right, var(--primary), var(--secondary));
-       
-        -webkit-text-fill-color: transparent;
-    }
+  
 }
 
 

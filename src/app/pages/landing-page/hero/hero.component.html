@@ -1,25 +1,57 @@
-<div id="hero" class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <p class="pt-4" style="text-align: justify;">
-                {{ 'HERO.welcome' | translate }}
-            </p>
-            <p style="text-align: justify;">
-                {{ 'HERO.specialize' | translate }}
-            </p>
-            <p>
-                {{ 'HERO.skills' | translate }}:
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>IONIC</li>
-                <li>ANGULAR</li>
-                <li>JAVASCRIPT</li>
-                <li>{{ 'HERO.english' | translate }}</li>
+<div class="wrapper">
 
-            </p>
+    <div class="row">
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex-center">
+            <div class="ps-5 pe-5">
+                <h1>Miguel Maldonado </h1>
+                <p class="pt-3" style="text-align: justify;">
+                    {{ 'HERO.welcome' | translate }}
+                </p>
+
+  <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-3" style="text-align: center;">
+                        <a (click)="op.toggle($event)"
+                            class="btn btn-secondary-gradient py-3  px-4 px-sm-5 rounded-pill animated slideInRight">{{
+                            'NAVBAR.contactMe' | translate }}</a>
+                    </div>
+                <p-overlayPanel #op>
+                    <div class="p-2">
+                        <button (click)="goToLink('https://wa.me/+584125961478')"
+                            class="btn btn-secondary-gradient py-3 px-4 px-sm-5 rounded-pill animated slideInRight"
+                            style="width: 192px;">
+                            WhatsApp
+                            <i class="pi pi-whatsapp" style="font-size: 18px;"></i>
+                        </button>
+                    </div>
+                    <div class="p-2">
+                        <button (click)="goToLink('https://t.me/miguelmb09')"
+                            class="btn btn-secondary-gradient py-3 px-4 px-sm-5 rounded-pill animated slideInRight"
+                            style="width: 192px;">
+                            Telegram
+                            <i class="pi pi-telegram" style="font-size: 18px;"></i>
+                        </button>
+                    </div>
+                </p-overlayPanel>
+
+            </div>
+
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-            <img width="100%" class="object-fit-fill" src="/assets/DSC02393.JPG" alt>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex-center pt-3">
+            <div class="avatar">
+                <img src="/assets/img/herom.jpg" />
+            </div>
+
         </div>
+
+
+    </div>
+
+    <div class="custom-shape-divider-bottom-1690903871">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
     </div>
 </div>

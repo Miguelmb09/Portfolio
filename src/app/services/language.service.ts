@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { BehaviorSubject } from 'rxjs';
-import { Projects, Proyectos } from 'src/assets/data/db';
+import { Partners, Projects, Proyectos, Socios } from 'src/assets/data/db';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +10,7 @@ export class LanguageService {
 
   selectedLanguage = new BehaviorSubject('');
   projects = new BehaviorSubject(null);
+  partners = new BehaviorSubject(null);
   projectDetail = new BehaviorSubject(null);
 
   constructor(private translate: TranslateService) { }
@@ -37,6 +38,7 @@ export class LanguageService {
     this.selectedLanguage.next(lang);
     localStorage.setItem('language', lang);
     this.getProjects();
+    this.getPartners();
   }
 
   getProjects() {
@@ -46,4 +48,15 @@ export class LanguageService {
 
     if (this.projectDetail.value) this.projectDetail.next(this.projects.value.filter(project => project.id === this.projectDetail.value.id)[0])
   }
+
+  getPartners() {
+
+    if (this.selectedLanguage.value === 'es') this.partners.next(Socios);
+    else this.partners.next(Partners);
+  }
+
+    // ===== Translate text by key =======
+    getTranslation(key: string) {
+      return this.translate.instant(key)
+    }
 }

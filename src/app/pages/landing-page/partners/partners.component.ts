@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LanguageService } from 'src/app/services/language.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-partners',
@@ -8,24 +10,22 @@ import { Component } from '@angular/core';
 export class PartnersComponent {
 
 
+  partners: BehaviorSubject<any>
+
+  constructor(
+    private langSvc: LanguageService
+  ) { }
+
+
   ngOnInit() {
-   
+    this.partners = this.langSvc.partners;
   }
 
- partners = [
-  {
-    name:'Jorge Henriquez',
-  description:'   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda similique odio quo numquam deleniti recusandae eveniet facilis dolore fugit quaerat magnam iure ipsum ad minus, voluptatem cumque mollitia maiores saepe.j',
-  img:'/assets/img/yorch.png'
-},
-{
-  name:'Melina Maldonado',
-description:'   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda similique odio quo numquam deleniti recusandae eveniet facilis dolore fugit quaerat magnam iure ipsum ad minus, voluptatem cumque mollitia maiores saepe.m',
-img:'/assets/img/mei.jpg'
-} 
- ]
+
+  goToLink(url: string){
+    window.open(url, "_blank");
+}
 
 
-  
 
 }

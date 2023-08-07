@@ -1,4 +1,3 @@
-
 /********** Template CSS **********/
 :root {
     --primary: #4294E3;
@@ -18,13 +17,41 @@
 @import "primeicons/primeicons.css";
 
 
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: rgb(31, 30, 30);
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+
+}
+
+@supports(object-fit: cover) {
+    .avatar img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+
+.d-flex-center{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
     padding-top: 9rem;
     background:
-       
+
         linear-gradient(to bottom right, var(--primary), var(--secondary));
     background-position:
         left 0px bottom 0px,

@@ -1,64 +1,57 @@
 <!-- Footer Start -->
-<div id="contact" class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5 px-lg-5">
-        <div class="row g-5">
-            <div class="col-md-6 col-lg-3">
-                <h4 class="text-white mb-4">{{ 'CONTACT.address' | translate }}</h4>
-                <p><i class="fa fa-map-marker-alt me-3"></i>Venezuela, Miranda</p>
-                <p><i class="fa fa-phone-alt me-3"></i>+58 412 596 1478</p>
-                <p><i class="fa fa-envelope me-3"></i>miguelmb09@hotmail.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
+
+<div class="wrapper">
+
+    <div id="contact" class="row txt" style="color: white;">
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12" style="padding-bottom: 20px; text-align: center;">
+
+
+            <h4 class="text-white mb-2">LinkedIn</h4>
+            <button (click)="goToLink('https://www.linkedin.com/in/miguel-maldonado-187213287')" class="btn btn-secondary-gradient py-sm-2 px-4 px-sm-5 rounded-pill animated slideInRight">
+                
+                <i class="pi pi-linkedin" style="font-size: 18px;"></i>
+            </button>
+
+            <div style="padding-top: 40px;">
+                <h4 class="text-white mb-2">{{ 'CONTACT.email' | translate }}</h4>
+                <p>miguelmb09@hotmail.com</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <h4 class="text-white mb-4">{{ 'CONTACT.quickLink' | translate }}</h4>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Privacy Policy</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" href="">Career</a>
+
+
+            <div style="margin-top: 70px;">
+                &copy; <a style="font-size: 14px;">{{ 'CONTACT.copyright' | translate }}</a>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <h4 class="text-white mb-4">{{ 'CONTACT.popularLink' | translate }}</h4>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Privacy Policy</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-                <a class="btn btn-link" href="">Career</a>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <h4 class="text-white mb-4">Newsletter</h4>
-                <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
-                <div class="position-relative w-100 mt-3">
-                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                    <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
-                </div>
-            </div>
+
         </div>
+
     </div>
-    <div class="container px-lg-5">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">myportfolio</a>, All Right Reserved. 
-                    
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a class="border-bottom">Miguel Maldonado</a>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-menu">
-                        <a href="">Home</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <div class="custom-shape-divider-top-1691172443">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
     </div>
+
+
 </div>
+
+
+<!-- <div class="container px-lg-5">
+    <div class="copyright">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                &copy; <a class="border-bottom" href="#">myportfolio</a>, All Right Reserved. 
+                
+               
+                Designed By <a class="border-bottom">Miguel Maldonado</a>
+            </div>
+           
+        </div>
+    </div>
+</div> -->
+
+
 <!-- Footer End -->

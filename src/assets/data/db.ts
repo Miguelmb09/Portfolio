@@ -369,3 +369,37 @@ export const Proyectos = [
         id: '6'
     },
 ]
+
+export const Partners = [
+    {
+        name: 'Jorge Henriquez',
+        degree: 'Higher Technician in Computer Science',
+        description: 'Web and mobile applications developer. Frontend development specialist with technologies such as Angular, Ionic, React, Firebase, among others. CEO and founder of the startup Yorch Dev.',
+        img: '/assets/img/yorch.png',
+        link: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fhumanidades.com%2Fwp-content%2Fuploads%2F2017%2F02%2Fpato-2-e1560917879703.jpg&tbnid=VMqQ-eEAaAVMNM&vet=12ahUKEwjOzfeMusOAAxUxZTABHY2ZDlMQMygHegUIARCJAg..i&imgrefurl=https%3A%2F%2Fhumanidades.com%2Fpato%2F&docid=BYb8PetcBfoWHM&w=800&h=400&q=pato&hl=es&authuser=0&ved=2ahUKEwjOzfeMusOAAxUxZTABHY2ZDlMQMygHegUIARCJAg'
+      },
+      {
+        name: 'Melina Maldonado',
+        degree: 'Graphic designer',
+        description: 'Graphic designer and specialist in UX/UI design stands out for her methodical and pragmatic approach. Her approach is purely functional, prioritizing efficiency and simplicity in each project.',
+        img: '/assets/img/mei.jpg',
+        link: 'https://www.behance.net/melinamaldonado'
+      }
+ ];
+
+ export const Socios = [
+    {
+        name: 'Jorge Henriquez',
+        degree: 'Técnico Superior en Informática',
+        description: 'Desarrollador de aplicaciones web y móviles. Especialista en desarrollo Frontend con tecnologías como Angular, Ionic, React, Firebase, entre otros. CEO y fundador del startup Yorch Dev.',
+        img: '/assets/img/yorch.png',
+        link: 'https://yorch-dev.com/'
+      },
+      {
+        name: 'Melina Maldonado',
+        degree: 'Diseñador Gráfico',
+        description: 'Diseñadora gráfica y especialista en diseño UX/UI se destaca por su enfoque metódico y pragmático. Su enfoque es puramente funcional, priorizando la eficiencia y la simplicidad en cada proyecto.',
+        img: '/assets/img/mei.jpg',
+        link: 'https://www.behance.net/melinamaldonado'
+      }
+ ]
