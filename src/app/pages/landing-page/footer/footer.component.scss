@@ -31,7 +31,11 @@
 }
 
 .custom-shape-divider-top-1691172443 .shape-fill {
-    fill: #FFFFFF;
+    fill: white;
+
+    &.isDark{
+        fill: black; 
+    }
 }
 
 

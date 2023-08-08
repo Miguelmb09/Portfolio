@@ -7,8 +7,16 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 
-  goToLink(url: string){
+  isDark: boolean = false;
+  
+  goToLink(url: string) {
     window.open(url, "_blank");
-}
+  }
 
+
+  setTheme() {
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+      this.isDark = true;
+    });
+  }
 }
