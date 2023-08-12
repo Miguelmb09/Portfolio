@@ -10,9 +10,10 @@
                 </p>
 
   <div class="col-lg-12 col-md-12 col-sm-12 col-12 p-3" style="text-align: center;">
-                        <a (click)="op.toggle($event)"
+                        <div (click)="op.toggle($event)"
                             class="btn btn-secondary-gradient py-3  px-4 px-sm-5 rounded-pill animated slideInRight">{{
-                            'NAVBAR.contactMe' | translate }}</a>
+                            'NAVBAR.contactMe' | translate }}</div>
+                             <div (click)="goToLink('https://firebasestorage.googleapis.com/v0/b/miguel-portfolio-d25ff.appspot.com/o/Profile.pdf?alt=media&token=6f482b94-4a95-40e8-b236-cd34dac85450')" class="vitae-btn btn py-3  px-4 px-sm-5 rounded-pill animated slideInRight">Currículum</div>
                     </div>
                 <p-overlayPanel #op>
                     <div class="p-2">
